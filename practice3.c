@@ -1,15 +1,21 @@
 #include <stdio.h>
 
-int main() {
+int main(void) {
     int score;
-    
-    scanf("%d", &score);
-    
-    if (score >= 80) {
-        printf("Passed.\n");
-    } else {
-        printf("Failed.\n");
+
+    while (1) {
+        scanf("%d", &score);
+
+        if (score < 0 || score > 100) {
+            break;
+        }
+
+        if (score >= 80) {
+            printf("Pass\n");
+        } else {
+            printf("Fail\n");
+        }
     }
-    
+
     return 0;
 }

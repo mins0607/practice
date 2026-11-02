@@ -1,15 +1,12 @@
 #include <stdio.h>
 
-int main() {
-    int num;
-    
-    scanf("%d", &num);
-    
-    printf("%d\n", num);
-    
-    if (num < 0) {
-        printf("minus\n");
+int main(void) {
+    int i;
+
+    for (i = 1; i <= 15; i++) {
+        printf("%d ", i);
     }
-    
+    printf("\n");
+
     return 0;
 }

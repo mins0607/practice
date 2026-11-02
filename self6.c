@@ -1,19 +1,30 @@
 #include <stdio.h>
 
-int main() {
-    int num;
-    
-    scanf("%d", &num);
-    
-    if (num > 0) {
-        if (num % 2 == 0) {
-            printf("Even Number\n");
+int main(void) {
+    int n;
+
+    while (1) {
+        printf("1. Korea\n");
+        printf("2. USA\n");
+        printf("3. Japan\n");
+        printf("4. China\n");
+        printf("number? ");
+        
+        scanf("%d", &n);
+
+        if (n == 1) {
+            printf("Seoul\n");
+        } else if (n == 2) {
+            printf("Washington\n");
+        } else if (n == 3) {
+            printf("Tokyo\n");
+        } else if (n == 4) {
+            printf("Beijing\n");
         } else {
-            printf("Odd Number\n");
+            printf("none\n");
+            break;
         }
-    } else {
-        printf("Non positive\n");
     }
-    
+
     return 0;
 }
